@@ -1,3 +1,3 @@
 # Top HN posts
 
-Creates a page every monday with last week HN top posts.
+Creates a page every month with last month HN top posts.
