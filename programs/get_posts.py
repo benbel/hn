@@ -43,8 +43,8 @@ def read_file(path):
 
 if __name__ == "__main__":
     fetch_block_size = 10**4 # how many posts to fetch at once
-    length_of_week = 2629743 # number of seconds in a month
-
+    duration = 31557600
+    
     current_unix_timestamp = time.time()
     posts_minimum_timestamp = current_unix_timestamp
 
@@ -53,9 +53,9 @@ if __name__ == "__main__":
 
     posts = []
 
-    while (posts_minimum_timestamp >= current_unix_timestamp - length_of_week):
+    while (posts_minimum_timestamp >= current_unix_timestamp - duration):
         percentage_done = round(
-          100 * (current_unix_timestamp - posts_minimum_timestamp) / length_of_week,
+          100 * (current_unix_timestamp - posts_minimum_timestamp) / duration,
           ndigits = 2
         )
 
