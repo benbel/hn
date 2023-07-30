@@ -43,7 +43,7 @@ def read_file(path):
 
 if __name__ == "__main__":
     fetch_block_size = 10**4 # how many posts to fetch at once
-    duration = 31557600
+    duration = 60 * 60 * 24 * 7
     
     current_unix_timestamp = time.time()
     posts_minimum_timestamp = current_unix_timestamp
